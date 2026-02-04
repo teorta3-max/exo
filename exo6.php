@@ -28,6 +28,7 @@ function afficherTable($n, $min = 1, $max = 9) {
     }
 }
 
+afficherTable(3);
 ?>
 
 
