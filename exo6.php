@@ -19,7 +19,14 @@ ob_start();
 
 <?php
 
-// Votre code ici
+function afficherTable($n, $min = 1, $max = 9) {
+    for ($i = 1; $i <= $n; $i++) {
+        for ($j = $min; $j <= $max; $j++) {
+            $result = $i * $j;
+            echo "<p>".$i." x ".$j." = ".$result."</p>";
+        }
+    }
+}
 
 ?>
 
