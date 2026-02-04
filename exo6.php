@@ -41,6 +41,19 @@ afficherTable(3);
     <li>Maintenant ajouter le <strong>typage</strong> sur les param&egrave;tres et sur le retour de la fonction</li>
 </ol>
 
+<?php
+
+function estPair(int $n): bool {
+    return $n % 2 === 0;
+}
+
+$n = 10;
+if (estPair($n)) {
+    echo "<p>".$n." est pair</p>";
+} else {
+    echo "<p>".$n." est impair</p>";
+}
+?>
 
 <?php $content = ob_get_clean(); ?>
 
